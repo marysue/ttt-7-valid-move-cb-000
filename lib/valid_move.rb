@@ -4,16 +4,9 @@ def valid_move? board, index
   if !index.between?(0,8)
       puts "Index out of range:  #{index}"
       return false
-  elsif (board[index] == " ")
+  elsif (board[index] == " " || board[index] == "" || board[index] == nil)
     print "board[#{index}] = "
     puts ' " " '
-    return true
-  elseif (board[index] == "")
-    print "board[#{index}] = "
-    puts ' "" '
-    return true
-  elseif (board[index] == nil)
-    puts "board[#{index}] = nil"
     return true
   else
     return false
