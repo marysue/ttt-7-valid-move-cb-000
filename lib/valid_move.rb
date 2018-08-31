@@ -1,10 +1,18 @@
 def valid_move? board, index
-  puts "Board[#{index}] = #{board[index]}"
   #returns true for valid position on an empty board
   #returns true for a valid position on a non-empty board
   if !index.between?(1,9)
       return false
-  elsif (board[index] == " " || board[index] == "" || board[index] == nil)
+  elsif (board[index] == " ") 
+    print "board[#{index}] = " 
+    puts ' " " '
+    return true
+  elseif (board[index] == "")
+    print "board[#{index}] = " 
+    puts ' "" '
+    return true
+  elseif (board[index] == nil)
+    puts "board[#{index}] = nil"
     return true
   else
     return false
