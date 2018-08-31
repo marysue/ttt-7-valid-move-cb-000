@@ -1,4 +1,3 @@
-
 def valid_move? board, index
   #returns true for valid position on an empty board
   #returns true for a valid position on a non-empty board
@@ -13,7 +12,7 @@ end
   #returns nil or false for an occupied position
   #returns nil or false for a position that is not on the board
 
-end
+
 # code your #valid_move? method here
 
 
