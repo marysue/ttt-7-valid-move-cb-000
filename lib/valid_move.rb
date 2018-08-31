@@ -1,5 +1,5 @@
 
-def valid_move?(board, index)
+def valid_move? board, index
   #returns true for valid position on an empty board
   #returns true for a valid position on a non-empty board
   if !index.between(1,9)
